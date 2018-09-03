@@ -148,3 +148,48 @@
 물론 이러한 부분이 중요하지 않은 것은 아니지만, 코딩하는 과정에서 이러한 부분들을 수정해 들어가기 위해, 정확한 디자인이 아니라 대략적인 컨셉만 잡고 넘어가는 것이다.
 
 * * *
+
+<br/>
+### 4. 데모 페이지 코딩
+
+해당 홈페이지의 데모버전을 구축하기 위해
+리액트 라이브러리를 사용했고, 스타일시트는 sass를 사용했으며, 웹팩 모듈 번들러와 eslint 툴을 사용하겠다.
+그 외의 패키지 버전은 package.json을 통해 확인하기 바란다.
+
+>package.json
+
+```
+  "dependencies": {
+    "react": "16.4.2",
+    "react-dom": "16.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "autoprefixer": "9.1.3",
+    "axios": "0.18.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "8.0.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-polyfill": "6.26.0",
+    "classnames": "2.2.6",
+    "clean-webpack-plugin": "0.1.19",
+    "css-loader": "1.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "include-media": "1.4.9",
+    "node-sass": "4.9.3",
+    "open-color": "1.6.3",
+    "postcss-loader": "3.0.0",
+    "prop-types": "15.6.2",
+    "react-icons": "3.0.5",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.0",
+    "uglifyjs-webpack-plugin": "1.3.0",
+    "webpack": "4.17.1",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "3.1.7"
+  }
+}
+```
