@@ -63,7 +63,8 @@ module.exports = {
                       plugins: () => [require('autoprefixer')]
                     }}, 'sass-loader']
 
-            }
+            },
+            { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
         ]
     },
     plugins: [
