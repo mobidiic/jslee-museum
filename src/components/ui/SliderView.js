@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {MdChevronLeft} from 'react-icons/md/'
 import {MdChevronRight} from 'react-icons/md/'
 import Proptypes from 'prop-types'
+import '../../../stylesheets/SliderView.scss'
 
 
 class SliderView extends Component {
@@ -14,11 +15,15 @@ class SliderView extends Component {
           <li>second</li>
           <li>third</li>
         </ul>
-        <div className="left-arrow" onClick={onPrev}>
-          <MdChevronLeft />
+        <div className="left-arrow">
+          <div className="circle" onClick={onPrev}>
+            <MdChevronLeft />
+          </div>
         </div>
-        <div className="right-arrow" onClick={onNext}>
-          <MdChevronRight />
+        <div className="right-arrow">
+          <div className="circle" onClick={onNext}>
+            <MdChevronRight />
+          </div>
         </div>
       </div>
     )

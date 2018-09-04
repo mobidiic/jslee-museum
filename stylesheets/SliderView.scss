@@ -1,0 +1,56 @@
+@import './globals';
+
+@mixin arrow-size{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: $lightskin;
+}
+
+
+
+.slider-wrapper{
+  height: 100%;
+
+  ul{
+
+    li{
+
+    }
+  }
+
+  .left-arrow{
+    @include arrow-size;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    left: 1rem;
+  }
+  .right-arrow{
+    @include arrow-size;
+    margin-right: -1rem;
+    padding-right: 1rem;
+    right: 1rem;
+  }
+  .circle{
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover{
+      background: rgba(0,0,0, 0.25);
+    }
+    &:active{
+      background: rgba(0,0,0,0.5);
+    }
+  }
+  svg{
+    font-size: 3rem;
+  }
+}

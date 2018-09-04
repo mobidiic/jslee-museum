@@ -1,15 +1,53 @@
 @import './globals';
 
 nav{
-  font-family: nanumGothic-bold;
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  font-size: 0;
 
-  .menu{
+  ul{
     position: relative;
+    display: float;
     float: left;
-    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: nanumGothic-bold;
+    font-size: 1rem;
+    color: darken($darkgrey, 50%);
+
+    li{
+      float: left;
+      text-align: center;
+      width: 100px;
+      height: 40px;
+
+      a{
+        text-decoration: none;
+        width: inherit;
+        height: inherit;
+
+        &:hover{
+          border-bottom: 3px solid $lightgrey;
+        }
+      }
+
+      ul{
+        font-size: 0.9rem;
+        margin-top: 0.6rem;
+        color: darken($darkgrey, 30%);
+        display: none;
+
+        li{
+          padding: 0;
+          height: 1.5rem;
+        }
+      }
+
+      &:hover{
+        ul{
+          display: block;
+        }
+      }
+
   }
+}
 }
