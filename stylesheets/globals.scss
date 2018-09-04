@@ -1,0 +1,28 @@
+
+
+$darkgrey : #444347;
+$lightgrey : #b5b5b5;
+$lightskin : #f2e2d7;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: nanumGothic-regular;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: nanumGothic-regular;
+  src: url('../fonts/NanumGothic-Regular.ttf');
+}
+
+@font-face{
+  font-family: nanumGothic-bold;
+  src: url('../fonts/NanumGothic-Bold.ttf');
+}
+
+@font-face{
+  font-family: nanumGothic-extraBold;
+  src: url('../fonts/NanumGothic-ExtraBold.ttf');
+}

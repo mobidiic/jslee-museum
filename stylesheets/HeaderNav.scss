@@ -1,0 +1,16 @@
+@import './globals';
+
+.header-nav{
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  padding-top: 2px;
+
+  span{
+    &:last-child{
+      font-size: 0.8rem;
+      color: $darkgrey;
+      margin-left: 12px;
+    }
+  }
+}

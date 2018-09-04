@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../../stylesheets/HeaderNav.scss'
 
 const HeaderNav = () => {
   return (

@@ -1,0 +1,15 @@
+@import './globals';
+
+nav{
+  font-family: nanumGothic-bold;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .menu{
+    position: relative;
+    float: left;
+    
+  }
+}

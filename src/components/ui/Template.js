@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import Footer from './Footer'
+import '../../../stylesheets/Template.scss'
 
 
 const Template = ({headerNav, mainHeader, mainNav, sliderView, cardView}) => {
@@ -10,13 +11,17 @@ const Template = ({headerNav, mainHeader, mainNav, sliderView, cardView}) => {
           {headerNav}
       </div>
       <div className="container">
-        {mainHeader}
+        <div className="header-wrapper">
+          {mainHeader}
+        </div>
         <div className="nav-wrapper">
           {mainNav}
         </div>
         <div className="slider-wrapper">
           {sliderView}
         </div>
+      </div>
+      <div className="container">
         <div className="article-wrapper">
           {cardView}
         </div>
