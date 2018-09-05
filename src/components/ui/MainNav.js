@@ -6,7 +6,7 @@ class MainNav extends Component {
 
   render(){
     return (
-      <nav className="main-nav">
+      <nav id="main-nav">
         <ul className="menu">
           <li><a href="#">소개</a>
             <ul className="sub-menu">

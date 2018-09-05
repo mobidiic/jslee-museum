@@ -17,10 +17,18 @@ class SliderView extends Component {
       <div className="slider-wrapper">
         <div id="touchslider">
           <ul>
-            <li><img src={url1} /></li>
-            <li><img src={url2} /></li>
-            <li><img src={url3} /></li>
-            <li><img src={url4} /></li>
+            <li>
+              <img src={url1} />
+            </li>
+            <li>
+              <img src={url2} />
+            </li>
+            <li>
+              <img src={url3} />
+            </li>
+            <li>
+              <img src={url4} />
+            </li>
           </ul>
         </div>
         <div className="left-arrow">

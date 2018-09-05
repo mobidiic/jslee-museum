@@ -4,7 +4,7 @@ import Footer from './Footer'
 import '../../../stylesheets/Template.scss'
 
 
-const Template = ({headerNav, mainHeader, mainNav, sliderView, cardView}) => {
+const Template = ({headerNav, mainHeader, mainNav, subNav, sliderView, cardView}) => {
   return (
     <main className="template">
       <div className="header">
@@ -16,6 +16,7 @@ const Template = ({headerNav, mainHeader, mainNav, sliderView, cardView}) => {
         </div>
         <div className="nav-wrapper">
           {mainNav}
+          {subNav}
         </div>
         <div className="slider-wrapper">
           {sliderView}

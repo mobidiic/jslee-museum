@@ -3,6 +3,7 @@ import Template from './ui/Template'
 import HeaderNav from './ui/HeaderNav'
 import MainHeader from './ui/MainHeader'
 import MainNav from './ui/MainNav'
+import SubNav from './ui/SubNav'
 import SliderView from './ui/SliderView'
 import CardView from './ui/CardView'
 import * as $ from 'jquery'
@@ -27,13 +28,32 @@ class App extends Component{
       btn_prev: $('.left-arrow'),
       btn_next: $('.right-arrow')
     })
-  }
+
+    const mainNav = document.getElementById('main-nav')
+    const subNav = document.getElementById('sub-nav')
+    const mainSticky = mainNav.offSetTop
+    const subSticky = subNav.offSetTop
+    const stickyFunc = function(){
+      if(window.pageYOffset >= mainSticky){
+        mainNav.classList.add("sticky")
+        subNav.classList.add("sticky")
+      }else{
+        mainNav.classList.remove("sticky")
+        subNav.classList.remove("sticky")
+        }
+      }
+    window.onscroll = function(){stickyFunc()}
+
+    }
+
+
 
   render(){
     return (
       <Template headerNav={<HeaderNav />}
                 mainHeader={<MainHeader />}
                 mainNav={<MainNav />}
+                subNav={<SubNav />}
                 sliderView={<SliderView />}
                 cardView={<CardView />}
       />
