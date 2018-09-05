@@ -27,7 +27,7 @@
   padding-top:10px;
   margin-left:20px;
   border-radius:50%;
-  background: #f9e3de;
+  background: #d7dee8;
   overflow: hidden;
   border: none;
 }
@@ -35,5 +35,12 @@
   margin-left: 0;
 }
 .ts-paging-active {
-  background: #ed5a38;
+  background: #385887;
+}
+
+
+.sticky{
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
