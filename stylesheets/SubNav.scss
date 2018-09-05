@@ -1,13 +1,12 @@
 @import './globals';
+@import './MainNav';
 
 nav#sub-nav{
   font-size: 0;
-  z-index: 4;
-  position: absolute;
+  z-index: 2;
   right: 3rem;
 
     ul{
-      position: relative;
       display: float;
       float: right;
       margin: 0;
@@ -15,7 +14,7 @@ nav#sub-nav{
       padding: 0;
       list-style: none;
       font-family: nanumGothic-regular;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       color: darken($darkgrey, 20%);
       background: transparent;
 
@@ -25,6 +24,13 @@ nav#sub-nav{
         width: 60px;
         height: 20px;
         margin-bottom: 0.3rem;
+        a{
+          text-decoration: none;
+          font-family: nanumGothic-bold;
+          color: inherit;
+          width: inherit;
+          height: inherit;
+        }
       }
 }
 

@@ -1,0 +1,21 @@
+@import './globals';
+
+.section-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 945px;
+  position: relative;
+
+  .exhib-article{
+    display: flex;
+    justify-content: center;
+    flex: 3;
+    position: relative;
+  }
+  .notic-article{
+    display: flex;
+    justify-content: center;
+    flex: 3;
+    position: relative;
+  }
+}

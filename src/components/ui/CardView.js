@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ExhibArticle from './ExhibArticle'
 import NoticArticle from './NoticArticle'
+import '../../../stylesheets/CardView.scss'
 
 class CardView extends Component {
   render(){

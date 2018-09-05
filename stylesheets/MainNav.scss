@@ -2,8 +2,12 @@
 
 nav{
   font-size: 0;
-  z-index: 3;
+  z-index: 2;
   position: absolute;
+
+#mainNav{
+  margin-left: 13px;
+}
 
   ul{
     position: relative;
@@ -18,6 +22,8 @@ nav{
     color: darken($darkgrey, 50%);
     background: transparent;
 
+
+
     li{
       float: left;
       text-align: center;
@@ -30,13 +36,13 @@ nav{
         color: $lightskin;
       }
 
+
       a{
         text-decoration: none;
         font-family: nanumGothic-bold;
         color: inherit;
         width: inherit;
         height: inherit;
-
       }
 
       ul{
@@ -44,7 +50,6 @@ nav{
         margin-top: 0.6rem;
         color: darken($darkgrey, 30%);
         display: none;
-
         li{
           padding: 0;
           height: 1.5rem;
@@ -54,9 +59,10 @@ nav{
       &:hover{
         ul{
           display: block;
+          }
         }
-      }
+
+    }
 
   }
-}
 }

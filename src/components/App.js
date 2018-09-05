@@ -29,12 +29,13 @@ class App extends Component{
       btn_next: $('.right-arrow')
     })
 
+    window.onscroll = function(){stickyFunc()}
     const mainNav = document.getElementById('main-nav')
     const subNav = document.getElementById('sub-nav')
-    const mainSticky = mainNav.offSetTop
-    const subSticky = subNav.offSetTop
+    const mainSticky = mainNav.offsetTop
+    const subSticky = subNav.offsetTop
     const stickyFunc = function(){
-      if(window.pageYOffset >= mainSticky){
+      if(window.pageYOffset >= mainSticky && window.pageYOffset >= subSticky){
         mainNav.classList.add("sticky")
         subNav.classList.add("sticky")
       }else{
@@ -42,7 +43,6 @@ class App extends Component{
         subNav.classList.remove("sticky")
         }
       }
-    window.onscroll = function(){stickyFunc()}
 
     }
 

@@ -7,6 +7,7 @@ class NoticArticle extends Component{
     const {prevNotic, nextNotic} = this.props
     return (
       <div className="notice">
+        <h3> 공지사항 </h3>
         <div className="img-wrapper">
           이미지가 없습니다
         </div>

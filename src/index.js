@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import App from './components/App'
+import '../stylesheets/index.scss'
 
 window.React = React
 

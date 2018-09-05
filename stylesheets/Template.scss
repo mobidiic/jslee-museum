@@ -9,13 +9,20 @@
     background-color: $lightskin;
   }
 
+.container{
   .header-wrapper{
     height: 80px;
     background-color: $darkgrey;
   }
 
+  .nav-wrapper{
+  }
+
+  .slider-wrapper{
+  }
+}
+
   .container-next{
-    margin-top: 400px;
   }
 
 }
