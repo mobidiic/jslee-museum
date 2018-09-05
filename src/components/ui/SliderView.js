@@ -3,6 +3,11 @@ import {MdChevronLeft} from 'react-icons/md/'
 import {MdChevronRight} from 'react-icons/md/'
 import Proptypes from 'prop-types'
 import '../../../stylesheets/SliderView.scss'
+import url1 from '../../../imgs/src/sliderImg1.jpg'
+import url2 from '../../../imgs/src/sliderImg2.jpg'
+import url3 from '../../../imgs/src/sliderImg3.jpg'
+import url4 from '../../../imgs/src/sliderImg4.jpg'
+
 
 
 class SliderView extends Component {
@@ -10,11 +15,14 @@ class SliderView extends Component {
     const { onPrev, onNext } = this.props
     return(
       <div className="slider-wrapper">
-        <ul className="slider">
-          <li>first</li>
-          <li>second</li>
-          <li>third</li>
-        </ul>
+        <div id="touchslider">
+          <ul>
+            <li><img src={url1} /></li>
+            <li><img src={url2} /></li>
+            <li><img src={url3} /></li>
+            <li><img src={url4} /></li>
+          </ul>
+        </div>
         <div className="left-arrow">
           <div className="circle" onClick={onPrev}>
             <MdChevronLeft />

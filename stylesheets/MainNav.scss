@@ -2,32 +2,41 @@
 
 nav{
   font-size: 0;
+  z-index: 3;
+  position: absolute;
 
   ul{
     position: relative;
     display: float;
     float: left;
     margin: 0;
+    margin-top: 1rem;
     padding: 0;
     list-style: none;
     font-family: nanumGothic-bold;
     font-size: 1rem;
     color: darken($darkgrey, 50%);
+    background: transparent;
 
     li{
       float: left;
       text-align: center;
       width: 100px;
-      height: 40px;
+      height: 20px;
+      margin-bottom: 0.3rem;
+      &:hover{
+        border-bottom: 3px solid darken($lightskin, 30%);
+        cursor: pointer;
+        color: $lightskin;
+      }
 
       a{
         text-decoration: none;
+        font-family: nanumGothic-bold;
+        color: inherit;
         width: inherit;
         height: inherit;
 
-        &:hover{
-          border-bottom: 3px solid $lightgrey;
-        }
       }
 
       ul{

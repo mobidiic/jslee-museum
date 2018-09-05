@@ -21,7 +21,7 @@ const Template = ({headerNav, mainHeader, mainNav, sliderView, cardView}) => {
           {sliderView}
         </div>
       </div>
-      <div className="container">
+      <div className="container-next">
         <div className="article-wrapper">
           {cardView}
         </div>

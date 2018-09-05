@@ -1,0 +1,39 @@
+@import './globals';
+
+.ts-controls{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    z-index: 3;
+    width: inherit;
+
+}
+
+.ts-paging {
+  width: inherit;
+  text-align:center;
+  display: inline-block;
+  position:absolute;
+  top:12px;
+  left:0;
+}
+.ts-paging-btn {
+  display:inline-block;
+  width:10px;
+  height: auto;
+  max-height: 10px;
+  padding-top:10px;
+  margin-left:20px;
+  border-radius:50%;
+  background: #f9e3de;
+  overflow: hidden;
+  border: none;
+}
+.ts-paging-btn:first-child {
+  margin-left: 0;
+}
+.ts-paging-active {
+  background: #ed5a38;
+}
