@@ -27,7 +27,7 @@ const OpenInfo = ({day, time}) => {
               <td>17:30</td>
             </tr>
             <tr>
-              <td><sup>*</sup>09:00 - 20:00&nbsp;</td>
+              <td className="open-sup"><sup>*</sup>09:00 - 20:00&nbsp;</td>
               <td>19:30</td>
             </tr>
             <tr>

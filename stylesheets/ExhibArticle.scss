@@ -55,25 +55,6 @@
   }
 
   &:hover{
-    box-shadow: 0 13px 45px rgba(0, 0, 0, 0.7),0 5px 12px rgba(0, 0, 0, 0.5),0 3px 7px rgba(0, 0, 0, 0.3);
-  }
-}
-
-.exhib-more{
-  display: float;
-  float: right;
-  position: relative;
-  font-size: 0.8rem;
-  margin-top: 15px;
-
-  a{
-    text-decoration: none;
-    color: darken($lightgrey,40%);
-
-    &:hover{
-      color: darken($lightskin, 50%);
-      font-weight: 200;
-      border-bottom: 2px solid darken($lightskin, 20%);
-    }
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.6),0 5px 12px rgba(0, 0, 0, 0.5),0 3px 7px rgba(0, 0, 0, 0.3);
   }
 }

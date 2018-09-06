@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import OpenInfo from '../lib/OpenInfo'
 import NoticInfo from '../lib/NoticInfo'
+import noticImg1 from '../../../imgs/src/noticImg1.jpeg'
+import '../../../stylesheets/NoticArticle.scss'
 
 class NoticArticle extends Component{
 
@@ -14,8 +16,10 @@ class NoticArticle extends Component{
         <h3> 공지사항 </h3>
         <OpenInfo day={day}
                   time={time} />
-        <NoticInfo prevNotic={prevNotic}
-                   nextNotic={nextNotic} />
+        <NoticInfo noticImg={noticImg1} />
+        <div className="exhib-more">
+          <p><a href="#"> 더 알아보기... </a></p>
+        </div>
       </div>
     )
   }

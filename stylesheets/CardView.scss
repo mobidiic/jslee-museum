@@ -28,3 +28,22 @@
     position: relative;
   }
 }
+
+.exhib-more{
+  display: float;
+  float: right;
+  position: relative;
+  font-size: 0.8rem;
+  margin-top: 15px;
+
+  a{
+    text-decoration: none;
+    color: darken($lightgrey,40%);
+
+    &:hover{
+      color: darken($lightskin, 50%);
+      font-weight: 200;
+      border-bottom: 2px solid darken($lightskin, 20%);
+    }
+  }
+}
