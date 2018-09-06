@@ -12,7 +12,7 @@ class ExhibArticle extends Component {
   render(){
     return(
       <div className="exhibit">
-        <h3 className="extitle"> 전시 안내 </h3>
+        <h3 className="extitle"> 전시안내 </h3>
         <div className="nowExhib">
           <ExhibitInfo exhibState={'현재 전시'}
                        exhibTitle={'내 사랑 패밀리'}
@@ -33,6 +33,9 @@ class ExhibArticle extends Component {
                        exhibDate={'17. 1. 30 - 17. 2. 26'}
                        imgSrc={imgPrev}
           />
+        </div>
+        <div className="exhib-more">
+          <p><a href="#"> 더 알아보기... </a></p>
         </div>
       </div>
     )

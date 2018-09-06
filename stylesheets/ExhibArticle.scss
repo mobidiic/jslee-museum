@@ -3,27 +3,24 @@
 
 .exhibit{
   position: relative;
-}
-h3{
-  color: white;
-  text-align: center;
+  margin-left: 50px;
 }
 
 .extitle{
-  margin-left: 50px;
+
 }
 
 .exhibit-wrapper{
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  box-sizing: border-box;
 
 
   .exhib-info{
     display: flex;
     width: 40%;
     flex-direction: column;
-    margin-left: 50px;
     background-color: #5c5e60;
     box-shadow: 0 8px 38px rgba(0, 0, 0, 0.3),0 5px 12px rgba(0, 0, 0, 0.22);
 
@@ -54,6 +51,29 @@ h3{
     box-shadow: 0 8px 38px rgba(0, 0, 0, 0.3), 0 5px 12px rgba(0, 0, 0, 0.22);
     img{
       width: inherit;
+    }
+  }
+
+  &:hover{
+    box-shadow: 0 13px 45px rgba(0, 0, 0, 0.7),0 5px 12px rgba(0, 0, 0, 0.5),0 3px 7px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.exhib-more{
+  display: float;
+  float: right;
+  position: relative;
+  font-size: 0.8rem;
+  margin-top: 15px;
+
+  a{
+    text-decoration: none;
+    color: darken($lightgrey,40%);
+
+    &:hover{
+      color: darken($lightskin, 50%);
+      font-weight: 200;
+      border-bottom: 2px solid darken($lightskin, 20%);
     }
   }
 }

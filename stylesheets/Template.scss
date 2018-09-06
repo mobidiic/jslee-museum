@@ -22,7 +22,19 @@
   }
 }
 
-  .container-next{
+.container-next{
+  display: flex;
+  justify-content: center;
+
+  .article-wrapper{
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    padding-bottom: 30px;
+    background-color: #f4f4f4;
   }
+}
 
 }
