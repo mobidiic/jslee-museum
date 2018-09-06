@@ -25,6 +25,10 @@ class App extends Component{
       gap: 0,
       roll: 1,
       transition: true,
+      autoplay:{
+        enable: true,
+        interval: 3500
+      },
       btn_prev: $('.left-arrow'),
       btn_next: $('.right-arrow')
     })

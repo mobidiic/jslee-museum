@@ -29,7 +29,6 @@ nav{
       text-align: center;
       width: 100px;
       height: 20px;
-      margin-bottom: 0.3rem;
       &:hover{
         border-bottom: 3px solid darken($lightskin, 30%);
         cursor: pointer;
@@ -47,12 +46,14 @@ nav{
 
       ul{
         font-size: 0.9rem;
-        margin-top: 0.6rem;
         color: darken($darkgrey, 30%);
+        top: -10px;
         display: none;
         li{
           padding: 0;
           height: 1.5rem;
+          &:first-child{
+          }
         }
       }
 
@@ -60,6 +61,7 @@ nav{
         ul{
           display: block;
           }
+
         }
 
     }

@@ -9,13 +9,11 @@ class NoticArticle extends Component{
 
   render(){
     const {prevNotic, nextNotic} = this.props
-    const day = "목"
     const time = "09:00 - 18:00"
     return (
       <div className="notice">
         <h3> 공지사항 </h3>
-        <OpenInfo day={day}
-                  time={time} />
+        <OpenInfo time={time} />
         <NoticInfo noticImg={noticImg1} />
         <div className="exhib-more">
           <p><a href="#"> 더 알아보기... </a></p>

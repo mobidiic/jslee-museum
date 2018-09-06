@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import '../../../stylesheets/OpenInfo.scss'
 import {IoMdTime} from 'react-icons/io'
 
-const OpenInfo = ({day, time}) => {
+const OpenInfo = ({time}) => {
   return(
     <div className="open-wrapper">
       <div className="open-notice">
@@ -11,8 +11,7 @@ const OpenInfo = ({day, time}) => {
           <IoMdTime />
         </div>
         <div className="time-explain">
-          <div>오늘은 <span className="day">{day}</span>요일</div>
-          <div>관람시간은 <span className="time">{time}</span>입니다.</div>
+          <div>오늘의 관람시간은 <span className="time">{time}</span>입니다.</div>
         </div>
       </div>
       <div className="open-timetable">

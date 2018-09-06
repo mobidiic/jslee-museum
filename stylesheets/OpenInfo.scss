@@ -22,6 +22,7 @@
     color: red;
     font-size: 2rem;
     grid-column: 1/2;
+    margin-bottom: 5px;
   }
 
   .time-explain{
@@ -29,11 +30,9 @@
     font-size: 0.9rem;
     padding-left: 10px;
 
-    span.day{
-      color: #ed8484;
-      font-size: 1.1rem;
-    }
     span.time{
+      margin-top: 4px;
+      margin-bottom: 4px;
       color: #ed8484;
       font-size: 1.1rem;
       display: block;
