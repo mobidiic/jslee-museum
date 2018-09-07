@@ -8,8 +8,6 @@ import SliderView from './ui/SliderView'
 import CardView from './ui/CardView'
 import * as $ from 'jquery'
 import touchSlider from 'jquery.touchslider'
-import { Route } from 'react-router-dom'
-import { IntroPage } from '../pages'
 import '../../stylesheets/App.scss'
 
 
@@ -56,13 +54,13 @@ class App extends Component{
 
   render(){
     return (
-      <Template headerNav={<HeaderNav />}
-                mainHeader={<MainHeader />}
-                mainNav={<MainNav />}
-                subNav={<SubNav />}
-                sliderView={<SliderView />}
-                cardView={<CardView />}
-      />
+        <Template headerNav={<HeaderNav />}
+                  mainHeader={<MainHeader />}
+                  mainNav={<MainNav />}
+                  subNav={<SubNav />}
+                  sliderView={<SliderView />}
+                  cardView={<CardView />}
+        />
     )
   }
 }
