@@ -54,13 +54,13 @@ class App extends Component{
 
   render(){
     return (
-      <Template headerNav={<HeaderNav />}
-                mainHeader={<MainHeader />}
-                mainNav={<MainNav />}
-                subNav={<SubNav />}
-                sliderView={<SliderView />}
-                cardView={<CardView />}
-      />
+        <Template headerNav={<HeaderNav />}
+                  mainHeader={<MainHeader />}
+                  mainNav={<MainNav />}
+                  subNav={<SubNav />}
+                  sliderView={<SliderView />}
+                  cardView={<CardView />}
+        />
     )
   }
 }

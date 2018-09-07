@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import App from './components/App'
+import Root from './Root'
 import '../stylesheets/index.scss'
 
 window.React = React
 
 render(
-  <App />,
+  <Root />,
   document.getElementById('react-container')
 )

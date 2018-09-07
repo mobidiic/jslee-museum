@@ -29,19 +29,11 @@ nav{
       text-align: center;
       width: 100px;
       height: 20px;
+      font-family: nanumGothic-bold;
       &:hover{
         border-bottom: 3px solid darken($lightskin, 30%);
         cursor: pointer;
         color: $lightskin;
-      }
-
-
-      a{
-        text-decoration: none;
-        font-family: nanumGothic-bold;
-        color: inherit;
-        width: inherit;
-        height: inherit;
       }
 
       ul{
