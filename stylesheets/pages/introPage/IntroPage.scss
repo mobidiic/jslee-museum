@@ -1,0 +1,34 @@
+.intro-container{
+  display: flex;
+  &:before{
+    background: url('../../../imgs/src/introNavBackground.jpg') repeat-y;
+    position: absolute;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+    z-index: -1;
+    content: '';
+    width: 25%;
+    height: 100%;
+  }
+
+  .intro-nav{
+    display: flex;
+    flex: 2;
+    background-color: rgba(0,0,0, 0.6);
+    text-align: center;
+  }
+  .intro-contents{
+    display: flex;
+    flex: 6;
+  }
+}
+
+
+.headerNav-wrapper{
+  z-index: 4;
+  height: 22px;
+  background-color: #f2e2d7;
+}
+
+.mainHeader-wrapper{
+}

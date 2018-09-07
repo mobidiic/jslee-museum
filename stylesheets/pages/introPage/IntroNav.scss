@@ -1,0 +1,40 @@
+.navi-wrapper{
+  width: 100%;
+  color: #f2e2d7;
+
+
+  .navi-go-back{
+    font-size: 1.8rem;
+    color: darken(#f2e2d7, 20%);
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+
+
+    span{
+      display: inline-block;
+      font-size: 1rem;
+      margin-left: 1rem;
+      padding-bottom: 6px;
+    }
+    .navi-slash{
+      margin-left: 15px;
+      margin-right: 20px;
+    }
+    .navi-current{
+      font-size: 1.4rem;
+      margin-left: 1rem;
+    }
+  }
+
+
+  .navi-menu{
+    height: 800px;
+
+
+
+
+  }
+
+
+}
