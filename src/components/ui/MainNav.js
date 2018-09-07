@@ -9,7 +9,7 @@ class MainNav extends Component {
     return (
       <nav id="main-nav">
         <ul className="menu">
-          <Link to="about">
+          <Link to="about" style={{color:"black"}}>
             <li>소개
               <ul className="sub-menu">
                 <li>미술관</li>
@@ -18,13 +18,13 @@ class MainNav extends Component {
               </ul>
             </li>
           </Link>
-          <Link to="exhibition">
+          <Link to="exhibition" style={{color:"black"}}>
             <li>전시</li>
           </Link>
-          <Link to="archive">
+          <Link to="archive" style={{color:"black"}}>
             <li>아카이브</li>
           </Link>
-          <Link to="news">
+          <Link to="news" style={{color:"black"}}>
             <li>소식
               <ul className="sub-menu">
                 <li>공지사항</li>
