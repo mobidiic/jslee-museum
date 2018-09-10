@@ -25,9 +25,10 @@ const Leejs = () => {
           <IntroCost />
         </div>
       </div>
-      <div className="museum-milestone">
+      <div className="museum-milestone-wrapper">
+        <MuseumMilestone />
       </div>
-      <div className="museum-location">
+      <div className="museum-location-wrapper">
       </div>
     </div>
   )
