@@ -1,7 +1,16 @@
+
+@mixin nav-menu-default{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .navi-wrapper{
   width: 100%;
   color: #f2e2d7;
-
+  height: inherit;
 
   .navi-go-back{
     font-size: 1.8rem;
@@ -29,9 +38,21 @@
 
 
   .navi-menu{
-    height: 800px;
+    height: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
 
+    .navi-museum{
+      @include nav-menu-default;
+    }
+    .navi-leejs{
+      @include nav-menu-default;
+    }
+    .navi-studio{
+      @include nav-menu-default;
+    }
 
 
   }
