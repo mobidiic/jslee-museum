@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Leejs = () => {
-  return (
+const Museum = () => {
+  return(
     <div>
-      이중섭소개
+      미술관 소개.
     </div>
   )
 }
 
-
-export default Leejs
+export default Museum

@@ -1,26 +1,28 @@
 .intro-container{
   display: flex;
   &:before{
-    background: url('../../../imgs/src/introNavBackground.jpg') repeat-y;
+    background: url('../../../imgs/src/introNavBackground.jpg') repeat scroll;
     position: absolute;
-    opacity: 0.8;
-    filter: alpha(opacity=50);
+    opacity: 0.3;
+    filter: alpha(opacity=90);
     z-index: -1;
     content: '';
     width: 25%;
     height: 100%;
+    background-color: rgba(0,0,0, 0.5);
   }
 
   .intro-nav{
     display: flex;
     flex: 2;
-    background-color: rgba(0,0,0, 0.6);
     text-align: center;
     height: 100%;
   }
   .intro-contents{
     display: flex;
     flex: 6;
+    flex-direction: column;
+    background-color: #f4f4f4;
   }
 }
 

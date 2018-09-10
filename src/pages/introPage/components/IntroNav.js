@@ -11,7 +11,7 @@ const IntroNav = () => {
         <span className="navi-current"> 소개 </span>
       </div>
       <div className="navi-menu">
-        <div className="navi-museum">
+        <div className="navi-museum selected">
           미술관
         </div>
         <div className="navi-leejs">

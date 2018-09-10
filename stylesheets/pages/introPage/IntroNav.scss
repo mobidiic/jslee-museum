@@ -1,10 +1,11 @@
 
 @mixin nav-menu-default{
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 150px;
+  width: 100%;
 }
 
 .navi-wrapper{
@@ -17,7 +18,7 @@
     color: darken(#f2e2d7, 20%);
     margin: 20px;
     padding: 20px;
-    position: relative;
+    position: fixed;
 
 
     span{
@@ -38,11 +39,11 @@
 
 
   .navi-menu{
-    height: inherit;
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
-
+    width: 25%;
+    margin-top: 150px;
 
     .navi-museum{
       @include nav-menu-default;
@@ -54,6 +55,9 @@
       @include nav-menu-default;
     }
 
+    .selected{
+      background-color: rgba(48,68 ,99, 1);
+    }
 
   }
 
