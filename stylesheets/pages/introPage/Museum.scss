@@ -1,0 +1,86 @@
+
+
+
+
+.museum-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .museum-image{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+  .museum-explain{
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #c4c4c4;
+    font-size: 0.9rem;
+    color: darken(#c6c6c6, 40%);
+    line-height: 1.6rem;
+    p{
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .museum-viewing{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #c4c4c4;
+  width: 90%;
+  display: float;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  color: darken(#444444, 20%);
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+
+    .museum-open{
+      display: float;
+      float: left;
+      margin-left: 50px;
+      th{
+        padding-right: 20px;
+        padding-bottom: 10px;
+      }
+      td{
+        padding-right: 20px;
+      }
+      span{
+        margin-top: 1.2rem;
+        font-size: 0.6rem;
+      }
+    }
+    .museum-cost{
+      display: float;
+      float: right;
+      left: -30px;
+      position: relative;
+      th{
+        padding-right:  20px;
+        padding-bottom: 10px;
+      }
+      td{
+        padding-right: 20px;
+      }
+    }
+
+  span{
+    &:first-child{
+      margin-top: 0.2rem;
+    }
+    display: block;
+    font-size: 0.6rem;
+    text-align: left;
+  }
+
+  }
+}
