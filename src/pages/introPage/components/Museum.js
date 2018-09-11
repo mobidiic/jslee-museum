@@ -29,6 +29,7 @@ const Leejs = () => {
         <MuseumMilestone />
       </div>
       <div className="museum-location-wrapper">
+        <MuseumLocation />
       </div>
     </div>
   )
