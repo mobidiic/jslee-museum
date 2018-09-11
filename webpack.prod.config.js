@@ -9,7 +9,7 @@ process.noDeprecation = true
 module.exports = {
     entry: ['babel-polyfill', "./src/index.js"],
     output: {
-        path:path.join(__dirname, 'dist', 'assets'),
+        path:path.join(__dirname, 'dist'),
         filename: "bundle.js"
     },
     optimization:{
@@ -57,7 +57,7 @@ module.exports = {
                       plugins: () => [require('autoprefixer')]
                     }}, 'sass-loader']
             },
-            { test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/, loader: [']url-loader?limit=100000','file-loader'] }
+            { test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/, loader: 'url-loader?limit=100000' }
         ]
     },
     plugins: [
