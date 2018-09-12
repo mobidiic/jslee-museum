@@ -1,11 +1,19 @@
 import React from 'react'
+import LeejsIntro from './lib/LeejsIntro'
+import LeejsJeju from './lib/LeejsJeju'
+import '../../../../stylesheets/pages/introPage/Leejs.scss'
 
-const Museum = () => {
+const Leejs = () => {
   return(
-    <div>
-      미술관 소개.
+    <div className="leejs-wrapper">
+      <div className="leejs-intro">
+        <LeejsIntro />
+      </div>
+      <div className="leejs-jeju">
+        <LeejsJeju />
+      </div>
     </div>
   )
 }
 
-export default Museum
+export default Leejs
