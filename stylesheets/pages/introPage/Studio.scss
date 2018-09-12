@@ -1,0 +1,46 @@
+.studio-wrapper{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .studio-title{
+    margin-top: 70px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+  .studio-img{
+    display: float;
+    float: left;
+    width: 270px;
+    height: 700px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 30px;
+    img{
+      margin-left: -380px;
+      margin-top: 0;
+      display: inline-block;
+      height: inherit;
+      z-index: -1;
+    }
+  }
+  .studio-contents{
+    display: float;
+    float: right;
+    width: 50%;
+    z-index: 1;
+    top: -700px;
+    position: relative;
+    margin-left: 330px;
+    .studio-hi{
+      font-size: 0.8rem;
+      color: darken(#a0a0a0, 20%);
+      line-height: 1.4rem;
+    }
+    .studio-people{
+      margin-top: 30px;
+    }
+  }
+}
