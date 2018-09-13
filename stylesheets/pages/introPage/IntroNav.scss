@@ -8,17 +8,19 @@
   width: 100%;
 }
 
-.navi-wrapper{
-  width: 100%;
+#navi-wrapper{
+  width: 25%;
+  height: 100%;
   color: #f2e2d7;
   height: inherit;
+  position: fixed;
+  z-index: 2;
 
   .navi-go-back{
     font-size: 1.8rem;
     color: darken(#f2e2d7, 20%);
     margin: 20px;
     padding: 20px;
-    position: fixed;
 
 
     span{
@@ -39,25 +41,24 @@
 
 
   .navi-menu{
-    position: fixed;
+    position: inherit;
     display: flex;
     flex-direction: column;
     width: 25%;
-    margin-top: 150px;
+    overflow: hidden;
 
-    .navi-museum{
+    #navi-museum{
       @include nav-menu-default;
     }
-    .navi-leejs{
+    #navi-leejs{
       @include nav-menu-default;
     }
-    .navi-studio{
+    #navi-studio{
       @include nav-menu-default;
     }
 
     .selected{
       background-color: rgba(48,68 ,99, 1);
-
     }
 
   }

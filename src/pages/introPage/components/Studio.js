@@ -37,7 +37,7 @@ class Studio extends Component {
           <div className="studio-people">
             <div className="people-current">
               <div className="people-th">
-                <div> 현재 입주인원 </div>
+                <div className="people-th-title"> 현재 입주인원 </div>
                 <span>{this.state.currentPeople.th}</span><span>기</span>
               </div>
               {this.state.currentPeople.names.map((name, i)=>{
