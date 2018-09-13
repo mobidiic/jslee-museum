@@ -41,7 +41,25 @@ class IntroPage extends Component{
     }
   }
 
+  handleGoBack = () =>{
+    window.history.back()
+  }
+
+  handleToMuseum = () =>{
+    let el1 = document.getElementById('museum')
+    el1.scrollIntoView(true)
+  }
+  handleToLeejs = () =>{
+    let el2 = document.getElementById('leejs')
+    el2.scrollIntoView(true)
+  }
+  handleToStudio = () =>{
+    let el3 = document.getElementById('studio')
+    el3.scrollIntoView(true)
+  }
+
   render(){
+    const { handleGoBack, handleToMuseum, handleToLeejs, handleToStudio } = this
     return(
       <div className="intro-page">
         <div className="headerNav-wrapper">
@@ -52,7 +70,10 @@ class IntroPage extends Component{
         </div>
         <div className="intro-container">
           <div id="intro-nav">
-            <IntroNav />
+            <IntroNav goBack={ handleGoBack }
+                      scrollToMuseum={ handleToMuseum }
+                      scrollToLeejs={ handleToLeejs }
+                      scrollToStudio={ handleToStudio } />
           </div>
           <div className="intro-contents">
             <div id="museum">

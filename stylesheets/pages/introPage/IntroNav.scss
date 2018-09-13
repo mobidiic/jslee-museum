@@ -22,6 +22,11 @@
     margin: 20px;
     padding: 20px;
 
+    .navi-home{
+      cursor: pointer;
+      font-size: 1.8rem;
+      margin-left: -10px;
+    }
 
     span{
       display: inline-block;
@@ -46,6 +51,7 @@
     flex-direction: column;
     width: 25%;
     overflow: hidden;
+    cursor: pointer;
 
     #navi-museum{
       @include nav-menu-default;
