@@ -16,7 +16,8 @@ module.exports = {
     devServer:{
       port:9000,
       contentBase: path.join(__dirname, 'dist', 'assets'),
-      inline: true
+      inline: true,
+      historyApiFallback: true
     },
     optimization:{
       minimizer: [
