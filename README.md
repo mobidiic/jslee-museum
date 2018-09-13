@@ -159,38 +159,46 @@
 >package.json
 
 ```
-  "dependencies": {
-    "react": "16.4.2",
-    "react-dom": "16.4.2"
-  },
-  "devDependencies": {
-    "@babel/core": "7.0.0",
-    "@babel/preset-env": "7.0.0",
-    "@babel/preset-react": "7.0.0",
-    "autoprefixer": "9.1.3",
-    "axios": "0.18.0",
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
-    "babel-loader": "8.0.2",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-polyfill": "6.26.0",
-    "classnames": "2.2.6",
-    "clean-webpack-plugin": "0.1.19",
-    "css-loader": "1.0.0",
-    "html-webpack-plugin": "3.2.0",
-    "include-media": "1.4.9",
-    "node-sass": "4.9.3",
-    "open-color": "1.6.3",
-    "postcss-loader": "3.0.0",
-    "prop-types": "15.6.2",
-    "react-icons": "3.0.5",
-    "sass-loader": "7.1.0",
-    "style-loader": "0.23.0",
-    "uglifyjs-webpack-plugin": "1.3.0",
-    "webpack": "4.17.1",
-    "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.7"
-  }
+"dependencies": {
+  "react": "16.4.2",
+  "react-dom": "16.4.2"
+},
+"devDependencies": {
+  "@babel/core": "7.0.0",
+  "@babel/preset-env": "7.0.0",
+  "@babel/preset-react": "7.0.0",
+  "autoprefixer": "9.1.3",
+  "axios": "0.18.0",
+  "babel-cli": "6.26.0",
+  "babel-core": "6.26.3",
+  "babel-loader": "8.0.2",
+  "babel-plugin-transform-class-properties": "6.24.1",
+  "babel-polyfill": "6.26.0",
+  "classnames": "2.2.6",
+  "clean-webpack-plugin": "0.1.19",
+  "css-loader": "1.0.0",
+  "d3-milestones": "1.0.0-alpha10",
+  "file-loader": "2.0.0",
+  "html-webpack-plugin": "3.2.0",
+  "include-media": "1.4.9",
+  "jquery": "3.3.1",
+  "jquery.touchslider": "1.5.0",
+  "node-sass": "4.9.3",
+  "open-color": "1.6.3",
+  "postcss-loader": "3.0.0",
+  "prop-types": "15.6.2",
+  "react-helmet": "5.2.0",
+  "react-icons": "3.0.5",
+  "react-lines-ellipsis": "0.13.2",
+  "react-naver-maps": "0.0.9",
+  "react-router-dom": "4.3.1",
+  "sass-loader": "7.1.0",
+  "style-loader": "0.23.0",
+  "uglifyjs-webpack-plugin": "1.3.0",
+  "url-loader": "1.1.1",
+  "webpack": "4.17.1",
+  "webpack-cli": "3.1.0",
+  "webpack-dev-server": "3.1.7"
 }
 ```
 
@@ -216,3 +224,18 @@
 에러페이지는 다음과 같다.
 
 ![error_page](./imgs/reports/errorPage.png)
+
+<br /><br />
+소개 페이지의 핵심은 css로 만든 타임라인 표와 네이버 지도 API 사용. 그리고 스크롤 다운에 따른 네비게이션 바의 표시 변화. 그리고 네비게이션 바 클릭시 해당 위치로 이동하는 기능이 있겠다.
+
+
+클릭시 이동하는 방법에는 리액트 라우터를 사용해도 되었고, 제이쿼리를 이용해도 되었지만, 순수 자바스크립트를 사용하는 것이 나을 것 같아서 선택했다.
+
+아직 css를 다루는 것이 조금 어렵다. 더 숙달해야할 필요성을 느꼈다.
+
+
+![intro_page1](./imgs/reports/introPageImg1.png)
+![intro_page2](./imgs/reports/introPageImg2.png)
+![intro_page3](./imgs/reports/introPageImg3.png)
+![intro_page4](./imgs/reports/introPageImg4.png)
+![intro_page5](./imgs/reports/introPageImg5.png)
