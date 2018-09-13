@@ -1,0 +1,95 @@
+.studio-wrapper{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .studio-title{
+    margin-top: 70px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+  .studio-img{
+    display: float;
+    float: left;
+    width: 270px;
+    height: 700px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 30px;
+    img{
+      margin-left: -380px;
+      margin-top: 0;
+      display: inline-block;
+      height: inherit;
+      z-index: -1;
+    }
+  }
+  .studio-contents{
+    display: float;
+    float: right;
+    width: 50%;
+    z-index: 1;
+    top: -700px;
+    position: relative;
+    margin-left: 330px;
+    .studio-hi{
+      font-size: 0.8rem;
+      color: darken(#a0a0a0, 20%);
+      line-height: 1.4rem;
+    }
+    .studio-people{
+      margin-top: 80px;
+
+      .people-current{
+        .people-th{
+        text-align: center;
+        margin-bottom: 50px;
+          .people-th-title{
+            font-size: 1.3rem;
+            color: darken(#a0a0a0, 30%);
+            margin: 10px;
+          }
+          span{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            letter-spacing: 0.5rem;
+            color:#75493e;
+            &:last-child{
+              margin-left: 10px;
+            }
+          }
+        }
+        .people-name{
+          margin: 20px;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          text-align: right;
+          border-bottom: 1px dashed #9b9b9b;
+          padding-bottom: 5px;
+          &:nth-child(even){
+            text-align: left;
+          }
+        }
+      }
+      .people-past{
+        margin-top: 10px;
+        text-align: right;
+        a{
+          text-decoration: none;
+          color: #b5b5b5;
+          font-size: 0.8rem;
+          &:hover{
+            border-bottom: 3px solid darken(#f2e2d7, 40%);
+            cursor: pointer;
+            color: darken(#f2e2d7, 30%);
+          }
+        }
+      }
+    }
+
+  }
+}

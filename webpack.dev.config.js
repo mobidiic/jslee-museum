@@ -8,7 +8,7 @@ process.noDeprecation = true
 module.exports = {
     entry: ['babel-polyfill', "./src/index.js"],
     output: {
-        path:path.join(__dirname, 'dist', 'assets'),
+        path:path.join(__dirname, 'dist'),
         filename: "bundle.js",
         sourceMapFilename: 'bundle.map'
     },

@@ -1,0 +1,27 @@
+
+.museum-map-wrapper{
+  border-bottom: 1px solid #c4c4c4;
+
+  #map{
+    width: inherit;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .museum-map-hi{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  .museum-map-contact{
+    font-size: 0.8rem;
+    color: #82868c;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    line-height: 1.3rem;
+  }
+}
